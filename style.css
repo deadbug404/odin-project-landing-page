@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-.first-content-text{
+.content-text{
     font-family: 'robotoregular',sans-serif;
     color: #f9faf8;
 }
@@ -28,6 +28,7 @@ body{
     font-size: 24px;
 }
 
+/* First content*/
 .first-content{
     display: flex;
     justify-content: space-around;
@@ -57,4 +58,33 @@ body{
     font-size: 16px;
     padding: 8px;
     width: 130px;
+}
+/* ---------------------------------- */
+/* Second content */
+
+.second-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-content p:first-child{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'robotoregular',sans-serif;
+    color: #1f2937;
+}
+
+.second-content .computer-parts{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.second-content .computer-parts .part{
+    text-align: center;
+    color: #1f2937;
+    font-size: 18px;
 }
