@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url("img/background.gif");
 }
 
 .content-text{
@@ -10,8 +11,12 @@ body{
 
 .header{
     display: flex;
-    background-color: #1f2937;
+    background-color: #E97777;
     justify-content: space-around;
+}
+
+.header p:first-child{
+    font-size: 24px;
 }
 
 .header ul{
@@ -23,17 +28,30 @@ body{
     list-style: none;
 }
 
-.header ul li{
+.header ul li a{
     text-decoration: none;
     font-size: 24px;
+
 }
 
+.header ul li a:hover{
+    color:tomato;
+}
 /* First content*/
 .first-content{
     display: flex;
-    justify-content: space-around;
-    padding: 64px;
-    background-color: #1f2937;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+    background-color: rgba(0, 255, 255,0.4);
+    flex-wrap: wrap;
+}
+
+.first-content img{
+    max-width: 500px;
+    max-height: 250px;
+    width: 70vw;
 }
 
 .first-content-left{
@@ -44,11 +62,12 @@ body{
     font-size: 48px;
     font-weight: bolder;
     margin-bottom: 8px;
+    color: #354259;
 }
 
 .first-content p{
     font-size: 18px;
-    color: #e5e7eb;
+    color: #354259;
 }
 
 .first-content button{
@@ -88,3 +107,11 @@ body{
     color: #1f2937;
     font-size: 18px;
 }
+
+/* sources 
+
+background gif: https://amariujala.vercel.app/3/posts/the-best-27-aesthetic-brown-anime-background-gif/
+anime merchandise: https://animewhiz.com/merchandise/
+
+
+*/
