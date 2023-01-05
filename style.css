@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: url("img/background.gif");
+    background-size: cover;
 }
 
 .content-text{
@@ -13,6 +14,7 @@ body{
     display: flex;
     background-color: #E97777;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .header p:first-child{
@@ -35,27 +37,37 @@ body{
 }
 
 .header ul li a:hover{
-    color:tomato;
+    color: red;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-box{
+    padding: 30px;
+    margin: 30px;
+    width: 85%;
 }
 /* First content*/
 .first-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
-    margin: 50px;
     background-color: rgba(0, 255, 255,0.4);
     flex-wrap: wrap;
 }
 
 .first-content img{
     max-width: 500px;
-    max-height: 250px;
-    width: 70vw;
+    width: 50vw
 }
 
 .first-content-left{
     width: 500px;
+    margin-bottom: 5%;
 }
 
 .first-content p:first-child{
@@ -85,33 +97,52 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0, 255, 255,0.4);
 }
 
 .second-content p:first-child{
     font-size: 36px;
     font-weight: bold;
     font-family: 'robotoregular',sans-serif;
-    color: #1f2937;
+    color: #354259;
 }
 
-.second-content .computer-parts{
+.second-content .anime-merch{
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 32px;
 
 }
 
-.second-content .computer-parts .part{
+.second-content .anime-merch img{
+    width: 300px; 
+    height: 220px;
+}
+
+.second-content .anime-merch .merchandise{
     text-align: center;
-    color: #1f2937;
+    color: #354259;
     font-size: 18px;
 }
 
-/* sources 
+/* ---------------------------------- */
+/* third content*/
+.third-content{
+    background-color: #FDFDBD;
+}
 
-background gif: https://amariujala.vercel.app/3/posts/the-best-27-aesthetic-brown-anime-background-gif/
-anime merchandise: https://animewhiz.com/merchandise/
+/* ---------------------------------- */
+/*footer*/
+.footer{
+    background-color: #E97777;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
 
-
-*/
+.footer a:hover{
+    color: red;
+}
